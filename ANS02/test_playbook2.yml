@@ -1,0 +1,27 @@
+---
+- hosts: all
+  name: Ping Hosts and install nginx and git 
+  become: true
+  
+  tasks:
+  - name: "Ping {{ inventory_hostname }}"
+    ping:
+    register: ping_info
+  
+  - name: "Show ping_info in console"
+    debug:
+      msg: "{{ ping_info }}"
+
+  - name: Install nginx
+    apt:
+      name: nginx
+      state: present
+      update_cache: true
+
+  - name: Install git
+    apt:
+      name: git
+      state: present
+      update_cache: true
+
+  
