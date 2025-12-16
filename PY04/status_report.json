@@ -1,0 +1,16 @@
+{
+  "validation results": [
+    {
+      "apache-server image validation": {
+        "status": "passed",
+        "reason": "image httpd from expected registry: "
+      }
+    },
+    {
+      "apache-server port validation": {
+        "status": "passed",
+        "reason": "port 80 in required range 80 - 100"
+      }
+    }
+  ]
+}
