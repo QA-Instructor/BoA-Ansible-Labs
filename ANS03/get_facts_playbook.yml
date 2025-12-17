@@ -1,0 +1,8 @@
+---
+- hosts: gcp_role_appserver
+  become: true
+  tasks:
+  - name: Get Some Facts
+    debug:
+      msg: "{{ ansible_host}}"
+    
