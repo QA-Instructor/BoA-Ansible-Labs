@@ -1,0 +1,12 @@
+[
+    {"token": "byy27wsb0gjeodps2kd0re9d.71j0gx1", "scopes": ["sandboxes:list"]}, 
+    {"token": "q6zn6o28056ia3hfesl0j4be7p16wcgw", "scopes": ["sandboxes:list", "sandboxes:create", "operations:list"]}, 
+    {"token": "0r61bm74t1jiymxnq3qqf2pwvplkj13a", "scopes": ["sandboxes:list", "sandboxes:create", "sandboxes:delete", "operations:list"]},
+    {"token": "ro5b64n4kehaurbuofkfbmnrhvxn0.yk", "scopes": ["sandboxes:list"]},
+    {"token": "mpzn3oqk3ymaijybadhcssh5nf.mpri0", "scopes": ["sandboxes:list", "operations:list"]},
+    {"token": "5vgud9glj60q1xrd.uicpjru.xxr8jhd", "scopes": ["sandboxes:list", "sandboxes:create", "sandboxes:update", "sandboxes:delete", "operations:list"]},
+    {"token": "9nvd5y5.jlyh1e93zmo50nk3wpynxin.", "scopes": ["sandboxes:create", "operations:list", "sandboxes:delete"]},
+    {"token": "4bvnx.c02koyvujjwsn7dan.iw0ow9ej", "scopes": ["sandboxes:list", "sandboxes:update", "operations:list"]},
+    {"token": "jtl.pmxmkvsrnu87m0eywx0vms4u8iv2", "scopes": ["sandboxes:list"]},
+    {"token": "4ryebmgw3q0hdv1ksgr.2rb0f6dvr2j2", "scopes": ["sandboxes:list"]}
+]

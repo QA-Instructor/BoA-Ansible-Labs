@@ -1,0 +1,18 @@
+- name: Update sandbox
+  hosts: localhost
+  tasks:
+  - name: update sandbox ttl and size
+    custom.bankx.sandbox:
+      api_token: "5vgud9glj60q1xrd.uicpjru.xxr8jhd"
+      api_endpoint: "http://127.0.0.1:8000"
+      name: "team-gamma-sbx"
+      owner_email: "team-gamma@bankx.com"
+      size: "medium"
+      ttl_days: 14
+      allowed_cidrs: ["0.0.0.0/0"]
+      state: "present"
+      # sandbox_id: "13437450-3370-4c52-8b4d-04fc0a60f169"
+    register: out
+  - name: dump output
+    debug:
+      msg: '{{ out }}'

@@ -1,0 +1,17 @@
+- name: Deploy sandbox
+  hosts: localhost
+  tasks:
+  - name: create sandbox
+    custom.bankx.sandbox:
+      api_token: "5vgud9glj60q1xrd.uicpjru.xxr8jhd"
+      api_endpoint: "http://127.0.0.1:8000"
+      name: "team-gamma-sbx"
+      owner_email: "team-gamma@bankx.com"
+      size: "small"
+      ttl_days: 7
+      allowed_cidrs: ["0.0.0.0/0"]
+      state: "present"
+    register: out
+  - name: dump output
+    debug:
+      msg: '{{ out }}'
