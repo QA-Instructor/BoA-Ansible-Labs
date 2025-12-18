@@ -1,10 +1,10 @@
 #! venv/bin/python3
 
-import calculator
+import calculator2
 import doctest
 
 def test_docs():
-    doctest.testmod(calculator)
+    doctest.testmod(calculator2)
 
 if __name__ == '__main__':
     test_docs()
