@@ -1,0 +1,19 @@
+---
+- name: Delete sandbox
+  hosts: localhost
+  tasks:
+  - name: remove sandbox
+    custom.bankx.sandbox:
+      api_token: "5vgud9glj60q1xrd.uicpjru.xxr8jhd"
+      api_endpoint: "http://127.0.0.1:8000"
+      sandbox_id: "f0379682-e55a-4ccf-8268-8c3d3704f6ce"
+      name: "team-alpha-sbx"
+      owner_email: "team-alpha@bankx.com"
+      size: "small"
+      ttl_days: 30
+      allowed_cidrs: ["0.0.0.0/0"]
+      state: "absent"
+    register: out
+  - name: dump output
+    debug:
+      msg: '{{ out }}'
